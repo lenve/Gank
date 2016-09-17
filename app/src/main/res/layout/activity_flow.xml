@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="org.sang.gank.app.FlowActivity">
+
+    <TextView
+        android:id="@+id/finish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:gravity="center"
+        android:onClick="finish"
+        android:text="完成" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="已添加频道" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/already_exists_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finish_btn"
+        app:flexWrap="wrap"></com.google.android.flexbox.FlexboxLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/already_exists_fb"
+        android:gravity="center"
+        android:text="更多频道,点击添加" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/more_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        app:flexWrap="wrap"></com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>
